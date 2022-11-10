@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                webView.loadUrl("https://www.shule.co.tz/");
+                webView.reload();
                 progressBar.setVisibility(View.VISIBLE);
                 shuleText.setVisibility(View.GONE);
                 button.setVisibility(View.GONE);
