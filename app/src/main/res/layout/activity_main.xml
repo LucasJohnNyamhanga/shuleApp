@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/splashScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:contentDescription="@string/shule_icon"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/shule"
+                android:textAlignment="center"
+                android:textColor="@color/ugoro"
+                android:textSize="22sp" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/shuleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/network_error"
+                android:textAlignment="center"
+                android:textColor="@color/ugoro"
+                android:textSize="14sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/ugoro"
+                android:indeterminateTintMode="src_atop" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="@string/try_again"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/developed_by"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/datasoft_technologies"
+                android:textAlignment="center"
+                android:textColor="@color/ugoro"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/datasoft_contact"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Shule</string>
+    <string name="shule">Shule</string>
+    <string name="shule_icon">Shule Icon</string>
+    <string name="developed_by">DEVELOPED BY</string>
+    <string name="datasoft_technologies">DataSoft Technologies</string>
+    <string name="datasoft_contact">+255 784 477 999</string>
+    <string name="network_error">Network Error, Connect to network and try again.</string>
+    <string name="try_again">Try Again</string>
+</resources>
