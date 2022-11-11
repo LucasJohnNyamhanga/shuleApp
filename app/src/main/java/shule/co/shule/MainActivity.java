@@ -1,7 +1,5 @@
 package shule.co.shule;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.DownloadManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -21,7 +19,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.IOException;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
